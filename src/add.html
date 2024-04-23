@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lägg till</title>
+    <script src="js/main.js" type="module"></script>
+</head>
+<body>
+    <nav>
+        <ul id="navList">
+            <a href="index.html"><li>Start</li></a>
+            <a href="add.html"><li>Lägg till erfarenhet</li></a>
+            <a href="about.html"><li>Om Lösningen</li></a>
+        </ul>
+    </nav>
+
+    <main>
+
+        <h1>Lägg till nya arbetserfarenheter:</h1>
+        <div id="errorDiv"></div>
+
+        <form>
+            <label for="workplace">Arbetsgivare:</label><br>
+            <input type="text" name="workplace" id="workplace"><br>
+
+            <label for="title">Arbetstitel:</label><br>
+            <input type="text" name="title" id="title"><br>
+
+            <label for="location">Plats/Stad:</label><br>
+            <input type="text" name="location" id="location"><br>
+
+            <label for="description">Arbetsuppgift:</label><br>
+            <input type="text" name="description" id="description"><br>
+            <br> 
+
+            <button type="submit" id="submitBtn">Lägg till</button>
+        </form>
+    
+        </main>
+
+</body>
+</html>
