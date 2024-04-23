@@ -1,0 +1,98 @@
+body {
+  background-color: #fffef4;
+  margin: 0;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  background-color: #0080003b;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+nav {
+  background-color: green;
+}
+
+#navList {
+  margin-top: 0;
+  padding: 1%;
+  list-style-type: none;
+}
+
+#navList li {
+  color: #fff;
+  display: inline;
+}
+
+a {
+  color: #fff;
+  padding: 2%;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+li:hover {
+  background-color: #0d7200ad;
+  padding: 1%;
+}
+
+article {
+  max-width: 34em;
+  margin: 2%;
+  font-size: 1.25em;
+}
+
+button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #c80000;
+  border-radius: 5px;
+  padding: .5%;
+  font-size: .75em;
+  box-shadow: 2px 2px 2px 1px #0a5800d3;
+}
+
+#submitBtn {
+  color: #fff;
+  cursor: pointer;
+  background-color: #2c9b00;
+  border: 3px;
+  border-radius: 5px;
+  padding: 1%;
+  font-family: Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px 1px #0a5800d3;
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  margin: 1.5%;
+}
+
+#workplace, #title, #description, #location {
+  border-radius: 5px;
+  width: 80%;
+  padding: 1em;
+  box-shadow: 10px 10px 2px 1px #11490033;
+}
+
+#intextLink {
+  color: #000;
+  padding: 0;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+#errorDiv {
+  color: red;
+  font-weight: bold;
+}
+/*# sourceMappingURL=index.77a9bc14.css.map */
