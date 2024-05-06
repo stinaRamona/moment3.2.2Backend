@@ -596,7 +596,9 @@ submitBtnEl.addEventListener("click", function(event) {
     let titleStr = document.getElementById("title").value;
     let locationStr = document.getElementById("location").value;
     let descriptionStr = document.getElementById("description").value;
-    //skickar med värden till funktion
+    //Validering av input fält
+    if (workplaceStr == "" || titleStr == "" || locationStr == "" || descriptionStr == "") errorDiv.innerHTML = "V\xe4nligen fyll i samtliga v\xe4rden!";
+    else //skickar med värden till funktion
     addExperience(workplaceStr, titleStr, descriptionStr, locationStr);
 });
 //för att lägga till värden(POST)
@@ -616,7 +618,7 @@ async function addExperience(workplace, title, description, location) {
             body: JSON.stringify(experience)
         });
         //om svaret inte är OK så skrivs felmeddelanden ut: 
-        if (!response.ok) throw new Error("V\xe4nligen fyll i alla v\xe4rden!");
+        if (!response.ok) throw new Error("N\xe5got gick fel!");
         let data = await response.json();
         console.table(data);
     } catch (error) {

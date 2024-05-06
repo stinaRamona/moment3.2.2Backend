@@ -14,8 +14,13 @@ submitBtnEl.addEventListener("click", function(event){
     let locationStr = document.getElementById("location").value;
     let descriptionStr = document.getElementById("description").value; 
 
-    //skickar med värden till funktion
-    addExperience(workplaceStr, titleStr, descriptionStr, locationStr);
+    //Validering av input fält
+    if (workplaceStr == "" || titleStr == "" || locationStr == "" || descriptionStr == "") {
+        errorDiv.innerHTML = "Vänligen fyll i samtliga värden!"
+    } else {
+        //skickar med värden till funktion
+        addExperience(workplaceStr, titleStr, descriptionStr, locationStr);
+    }
 })  
 
 //för att lägga till värden(POST)
@@ -38,7 +43,7 @@ async function addExperience(workplace, title, description, location) {
 
     //om svaret inte är OK så skrivs felmeddelanden ut: 
     if (!response.ok) {
-        throw new Error("Vänligen fyll i alla värden!");
+        throw new Error("Något gick fel!");
     } 
 
     let data = await response.json(); 
